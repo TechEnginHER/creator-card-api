@@ -55,7 +55,7 @@ async function getCard(serviceData) {
       access_type: card.access_type,
       created: card.created,
       updated: card.updated,
-      deleted: card.deleted,
+      deleted: card.deleted || null,
     };
   } catch (error) {
     appLogger.error(error, 'get-card-error');

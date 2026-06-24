@@ -187,7 +187,7 @@ async function createCard(serviceData) {
       access_code: card.access_code,
       created: card.created,
       updated: card.updated,
-      deleted: card.deleted,
+      deleted: card.deleted || null,
     };
   } catch (error) {
     appLogger.error(error, 'create-card-error');
