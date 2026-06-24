@@ -3,5 +3,5 @@ const createServer = require('./server');
 
 module.exports = {
   createHandler,
-  createServer,
+  createServer
 };
